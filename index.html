@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>AMPLIFY</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+				<div class="logo"><img id="logo" src="images/icon/logo.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#courses_section">Courses</a></li>
+				<li><a href="#portfolio_section">About Us</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="login-btn" href="login.html">LogIn</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Engineering Excellence Starts Here at Amplify.</p>
+				<h5>Explore electrical and electronics engineering with expert insights, curated resources, and interactive tools. Master core concepts, stay updated on emerging technologies, and develop hands-on skills for practical applications. Whether you're a student or a professional, our platform equips you to excel in this dynamic and ever-evolving field.</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/Human 1.png" alt="Username">
+				<p>Student</p>
+			</div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#courses_section">Courses</a></li>
+				<li><a href="#portfolio_section">About Us</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="login.html">Log In</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	<div class="title" id="courses_section">
+		<span>Subjects to Choose From</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="subjects/signals.html"><img src="images/courses/book.png">Signals and Systems</a></div>
+		<div class="det"><a href="subjects/machines.html"><img src="images/courses/d1.png">Electrical Machines</a></div>
+		<div class="det"><a href="subjects/emft.html"><img src="images/courses/paper.png">EMFT</a></div>
+		<div class="det"><a href="subjects/power.html"><img src="images/courses/d1.png">Power Systems</a></div>
+	</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p class="about-heading" style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>What you think about us ?</h2>
+					<p>Education in electrical engineering involves facilitating the understanding and application of concepts, skills, and principles essential to the field. It encompasses the acquisition of knowledge through teaching, training, problem-solving, discussions, and hands-on research. <br><br>
+
+						An educational platform for electrical engineering can include interactive simulations, videos, quizzes, and resources designed to make learning engaging and effective. These tools enhance comprehension and bridge the gap between theoretical knowledge and practical application, especially in today’s technology-driven world.</p>
+				</div>
+		</div>
+	</div>
+<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the Students Say About Us?</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/Human 1.png"><p>Sophie Daniel</p>
+				<h6>Signals and Systems</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+				I studied Signals and Systems, and it was a great experience. The problems and assignments were thoughtfully designed, making learning both challenging and interesting. The concepts were explained clearly, and any doubts were addressed effectively. Overall, the content was engaging and helped me understand the subject thoroughly.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/Human 2.png"><p>Clayton Clair</p>
+				<h6>Electrical Machines</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+				When I attended Ankit Sir lectures on Electrical Machines, I felt he was like a mentor, much like Shahrukh Khan in Dear Zindagi. The way he explained concepts and provided valuable insights was like receiving life lessons in electrical engineering.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/Human 3.png"><p>Devyn Sethi</p>
+				<h6>EMFT</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Amplify is user-friendly and provides engaging content, including interactive tutorials, videos, and quizzes, which enhance learning. Whether you're a student or professional, Amplify's structured approach and practical insights make it a valuable tool for mastering electrical engineering.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/Human 4.png"><p>Rylee Phillips</p>
+				<h6>Power Systems</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					The Power Systems course offers comprehensive coverage of essential concepts in electrical power generation, distribution, and transmission. The course provides a strong foundation in understanding complex systems, making it ideal for both beginners and those looking to deepen their knowledge. 
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p class="contact-section">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:abhijeetsinghmasand@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 0px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:abhijeetsinghmasand@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name :</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email :</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details :</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #f6ad26, #e3732c); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo - Copy.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
