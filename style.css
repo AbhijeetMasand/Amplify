@@ -699,7 +699,7 @@ footer .btn:hover {
 	}
 	.logo {
 		transition: 1s;
-		margin-left: 30%;
+		margin-left: -12%;
 	}
 	nav ul, .srch, .login-btn{
 		display: none;
